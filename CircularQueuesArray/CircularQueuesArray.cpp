@@ -34,3 +34,10 @@ public:
 		}
 		queue_array[REAR] = num;
 	}
+
+	void remove() {
+		if (FRONT == -1) {
+			cout << "Queue underlow\n";
+			return
+		}
+		cout << "\nThe element deleted from the queue is: " << queue_array[FRONT] << "\n";
